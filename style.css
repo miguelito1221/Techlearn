@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'timen new roman';
+}
+header{
+    position: sticky;
+    top: 0px;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+}
+.menu {
+    display: absolute;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav {
+    background: #eee9e9;
+    border-radius: .5px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(10, 5, 5, 0.4); 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #292828;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s;
+}
+nav ul li a{
+    color: #000;
+    text-transform: Arial;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    background: #3effa2;
+    width: 120%;
+    height: 20%;
+    border-radius: .5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+}
+
+nav ul li:hover {
+    color: #fff;
+}
+
+nav ul li:hover::after {
+    top: 100%;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.img-head {
+    display: flex;
+    position: static;
+    display: inline-block;
+    height: 100%;
+    opacity: 1;
+}
+.img-head img{
+    width: 100%;
+    opacity: 1;
+}
+.img-head-text{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+/*section1*/
+/*esta parte del codigo modifica el texto despues de la bienvenida*/
+.welcome-to-portal{
+    font-family: 'Times New Noman', Courier, monospace;
+    display: inline-block;
+    margin-top: 100px;
+
+}
+.welcome{
+    display: inline-block;
+    position: flex;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+.welcome-text{
+    font-size: 25px;
+}
+
+
+/*seccion de presentacion de materias*/
+/*color de fondo*/
+.presentation-of-subjects {
+    background-color: #3effa2;
+    position: static;
+    display: inline-block;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.matter{
+    position: static;
+    display: inline-flex;
+    margin-left: 100%;
+}
+/*presentacion de programacion*/
+.presentation-of-programming {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: -2%;
+    margin-right: -5%;
+}
+.programming-text{
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+}
+/*presentacion de diseño web*/
+.presentation-of-designer{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-right: -10%;
+    margin-left: -0.5%;
+    margin-top: -15%;
+    
+}
+.designer-text{
+    margin-top: 10px;
+}
+.presentation-of-designer img{
+    width: 180px;
+}
+/*presentacion de soporte tecnico*/
+.presentation-of-support{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: -.5%;
+    margin-right: -5%;
+    margin-top: 25px;
+}
+.support-text{
+    margin-top: -20px;
+    text-align: center;
+}
+/*presentacion de redes*/
+.presentation-of-networks{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-right: -5%;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.networks-text{
+    margin-top: 10px;
+}
+.presentation-of-networks img{
+    width: 250px;
+}
